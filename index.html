@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Ionic</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="lib/css/ionic.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/index.css" type="text/css" rel="stylesheet"/>
+    <script>
+        (function() {
+            var count = 16;
+            var view = screen.width;
+            document.querySelector('html').style.fontSize = view / 16 + 'px';
+        })()
+    </script>
+</head>
+<body>
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-nav-view></ion-nav-view>
+
+    <script src="lib/js/ionic.bundle.min.js"></script>
+    <script src="config/config.js"></script>
+    <script src="controller/controller.js"></script>
+    <script src="lib/js/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript">
+        angular.module('ionicApp', ['ionic','config','controller']);
+    </script>
+
+</body>
+</html>

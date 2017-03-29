@@ -1,0 +1,98 @@
+<ion-view view-title="生活圈">
+    <ion-content class="padding">
+        <div class="bar bar-header">
+            <div class="h1 title life">
+                <div class="selectLife"><img src="images/dog.png"/>遛狗圈</div>
+                <div><img src="images/people.png" />好人圈</div>
+                <div><img src="images/shiwu.png" />招领圈</div>
+            </div>
+        </div>
+
+        <div class="content has-header1">
+
+            <div class="list card">
+                <div class="item item-avatar">
+                    <img src="http://www.runoob.com/try/demo_source/mcfly.jpg">
+                    <h2>周添尉</h2>
+                    <p>2017-07-08</p>
+                </div>
+
+                <div class="item item-body">
+                    <img class="full-image" style="height:20%; width:100%" src="http://www.runoob.com/try/demo_source/delorean.jpg">
+                    <p>
+                        I have a dream ...
+                    </p>
+                    <p>
+                        <a href="#" class="subdued">1 喜欢</a>
+                        <a href="#" class="subdued">5 评论</a>
+                    </p>
+                </div>
+
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <a class="tab-item" >
+                        <i class="icon ion-thumbsup"></i>
+                        喜欢
+                    </a>
+                    <a class="tab-item" ng-click="showPinglun.show1=!showPinglun.show1">
+                        <i class="icon ion-chatbox"></i>
+                        评论
+                    </a>
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-share"></i>
+                        分享
+                    </a>
+                </div>
+
+                <div class="pinglun" ng-show="showPinglun.show1">
+                    <input type="text" value="131"/>
+                    <div ng-click="showPinglun.show1=false">发表</div>
+                </div>
+
+            </div>
+
+            <!------------------------------------------->
+            <div class="list card">
+                <div class="item item-avatar">
+                    <img src="http://www.runoob.com/try/demo_source/mcfly.jpg">
+                    <h2>周添尉</h2>
+                    <p>2017-07-08</p>
+                </div>
+
+                <div class="item item-body">
+                    <img class="full-image" style="height:20%; width:100%" src="http://www.runoob.com/try/demo_source/delorean.jpg">
+                    <p>
+                        I have a dream ...
+                    </p>
+                    <p>
+                        <a href="#" class="subdued">1 喜欢</a>
+                        <a href="#" class="subdued">5 评论</a>
+                    </p>
+                </div>
+
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <a class="tab-item" >
+                        <i class="icon ion-thumbsup"></i>
+                        喜欢
+                    </a>
+                    <a class="tab-item" ng-click="showPinglun.show2=!showPinglun.show2">
+                        <i class="icon ion-chatbox" ></i>
+                        评论
+                    </a>
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-share"></i>
+                        分享
+                    </a>
+                </div>
+
+                <div class="pinglun" ng-show="showPinglun.show2">
+                    <input type="text" value="131"/>
+                    <div ng-click="showPinglun.show2=false">发表</div>
+                </div>
+
+            </div>
+            <!------------------------------------------->
+        </div>
+
+
+    </ion-content>
+</ion-view>
